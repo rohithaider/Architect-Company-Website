@@ -1,23 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="cupcake">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 3</title>
-</head>
-<body>
+    <!-- daisy ui and tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "lime-background": "#ABEF5F",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/28cfe9a69d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Style -->
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-manrope">
     <!-- Header -->
-    <header>
-
+    <header">
+      <!-- navbar -->
+      <nav class="container mx-auto mt-6">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <i
+              class="fa-solid fa-arrow-right bg-lime-background p-2 lg:p-3 rounded-full -rotate-45"
+            ></i>
+            <a class="btn btn-ghost text-3xl font-extrabold">Rinterio</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-base">
+              <li class="font-extrabold "><a>Home</a></li>
+              <li class="text-gray-500"> <a>Services</a></li>
+              <li class="text-gray-500"><a>Portfolio</a></li>
+              <li class="text-gray-500"><a>Blogs</a></li>
+              <li class="text-gray-500"><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end lg:space-x-2">
+            <i class="invisible lg:visible fa-solid fa-magnifying-glass rounded-full bg-white p-2 border"></i>
+            <i class="invisible lg:visible fa-solid fa-cart-shopping rounded-full bg-white p-2 border"></i>
+            <a class="btn invisible lg:visible bg-lime-background font-extrabold text-xl">Book Consult<i
+                class="fa-solid fa-arrow-right bg-black text-white p-2 rounded-full -rotate-45"
+              ></i></a>
+          </div>
+          <div class="dropdown rounded-full bg-white border">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- banner -->
     </header>
     <!-- Main -->
-    <main>
-
-    </main>
+    <main></main>
     <!-- footer -->
-    <footer>
-
-    </footer>
-    
-</body>
+    <footer></footer>
+  </body>
 </html>
