@@ -26,8 +26,7 @@
             colors: {
               clifford: "#da373d",
               "lime-background": "#ABEF5F",
-              "lime-light-background":"#D4F6AE"
-              
+              "lime-light-background": "#D4F6AE",
             },
           },
         },
@@ -59,19 +58,26 @@
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 text-base">
-              <li class="font-extrabold "><a>Home</a></li>
-              <li class="text-gray-500"> <a>Services</a></li>
+              <li class="font-extrabold"><a>Home</a></li>
+              <li class="text-gray-500"><a>Services</a></li>
               <li class="text-gray-500"><a>Portfolio</a></li>
               <li class="text-gray-500"><a>Blogs</a></li>
               <li class="text-gray-500"><a>Contact Us</a></li>
             </ul>
           </div>
           <div class="navbar-end lg:space-x-2">
-            <i class="invisible lg:visible fa-solid fa-magnifying-glass rounded-full bg-white p-2 border"></i>
-            <i class="invisible lg:visible fa-solid fa-cart-shopping rounded-full bg-white p-2 border"></i>
-            <a class="btn invisible lg:visible bg-lime-background font-extrabold text-xl">Book Consult<i
+            <i
+              class="invisible lg:visible fa-solid fa-magnifying-glass rounded-full bg-white p-2 border"
+            ></i>
+            <i
+              class="invisible lg:visible fa-solid fa-cart-shopping rounded-full bg-white p-2 border"
+            ></i>
+            <a
+              class="btn invisible lg:visible bg-lime-background font-extrabold text-xl"
+              >Book Consult<i
                 class="fa-solid fa-arrow-right bg-black text-white p-2 rounded-full -rotate-45"
-              ></i></a>
+              ></i
+            ></a>
           </div>
           <div class="dropdown rounded-full bg-white border">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -96,23 +102,83 @@
       <!-- banner -->
       <div class="space-y-6">
         <!-- image div -->
-         <div class="flex justify-center">
-            <img src="./assets/banner.png" alt="">
-         </div>
-         <!-- contents div -->
-          <div class="text-center  space-y-6">
-            <h1 class="font-extrabold text-6xl lg:px-16 ">A barn house of this design has a striking appearance</h1>
-            <p class="font-medium text-base lg:px-36">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-            <a class="btn bg-lime-light-background font-extrabold text-xl border-2 border-lime-background w-5/6 lg:w-2/12">View Details<i
-                class="fa-solid fa-arrow-right bg-lime-background text-black p-2 rounded-full -rotate-45"
-              ></i></a>
-            
-
-          </div>
+        <div class="flex justify-center">
+          <img src="./assets/banner.png" alt="" />
+        </div>
+        <!-- contents div -->
+        <div class="text-center space-y-6">
+          <h1 class="font-extrabold text-6xl lg:px-16">
+            A barn house of this design has a striking appearance
+          </h1>
+          <p class="font-medium text-base lg:px-36">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents, and
+            large windows that flood the space with natural light.
+          </p>
+          <a
+            class="btn bg-lime-light-background font-extrabold text-xl border-2 border-lime-background w-5/6 lg:w-2/12"
+            >View Details<i
+              class="fa-solid fa-arrow-right bg-lime-background text-black p-2 rounded-full -rotate-45"
+            ></i
+          ></a>
+        </div>
       </div>
     </header>
     <!-- Main -->
-    <main></main>
+    <main class="bg-base-200 relative">
+        <!-- vector art -->
+     <img class="relative top-16 left-52  invisible lg:visible" src="./assets/Vector.png" alt="">
+     <!-- About us section -->
+      <section class="container mx-auto px-5">
+        <!-- parent div -->
+        <div class="lg:flex justify-around space-y-4 lg:pt-10 items-center">
+            <div class="flex flex-col space-y-6">
+                <!-- text contents -->
+                <a
+                class="btn bg-white font-extrabold text-xl w-2/4 self-center lg:self-start"
+                ><i
+                class="fa-solid fa-arrow-right text-black p-2 rounded-full "
+              ></i
+            >About Us</a>
+            <h1 class="font-bold text-4xl self-center lg:self-start">We design thoughtful,<br> liveable spaces</h1>
+            <p class="font-medium text-base self-center lg:self-start">The barn house captivates with its blend of rustic charm and <br>
+                modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            <!-- cards -->
+            <div class="card card-side bg-base-100 shadow-xl pl-6">
+                <figure>
+                  <img
+                    src="./assets/commercial.png"
+                    alt="Commercial" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Commercial</h2>
+                  <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                  
+                </div>
+              </div>
+              <div class="card card-side bg-base-100 shadow-xl pl-6">
+                <figure>
+                  <img
+                    src="./assets/residential.png"
+                    alt="residential" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">residential</h2>
+                  <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                  
+                </div>
+              </div>
+    
+            </div>
+            <!-- image contents -->
+            <div>
+                <img src="./assets/Rectangle.png" alt="">
+    
+            </div>
+        </div>
+
+      </section>
+    </main>
     <!-- footer -->
     <footer></footer>
   </body>
